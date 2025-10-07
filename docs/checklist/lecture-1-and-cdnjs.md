@@ -14,17 +14,17 @@ composer install
 ```bash
 docs(readme): Updated the `readme`
 ```
-- [ ] Start pushing directly to `main` or from a `branch` in `stagging`. Possible branch name `docs/readme`
-- [ ] Once satisfied a `publish` or `sync` click it to push from `stagged` to the `remote`
-- [ ] Create `Branch` name it `development` so you can safely develop without triggering auto checker
+- [x] Start pushing directly to `main` or from a `branch` in `stagging`. Possible branch name `docs/readme`
+- [x] Once satisfied a `publish` or `sync` click it to push from `stagged` to the `remote`
+- [x] Create `Branch` name it `development` so you can safely develop without triggering auto checker
 
 ---
 
-[ ] 2. Create your personal landing page
-- [ ] Create `Issue` named Landing Page, can add description if you want to.
-- [ ] Create `Branch` name it `frontend/landingPage`. make sure that you are in right branch looking at the bottom left you should see `frontend/landingPage` not `main`, `development`
-- [ ] Add new `View` with basics html requirements under the `user` folder with name `landing.php`
-- [ ] Add new `Controller` named `Users` using command found on templates(requires php and composer) readme or coding your own
+[x] 2. Create your personal landing page
+- [x] Create `Issue` named Landing Page, can add description if you want to.
+- [x] Create `Branch` name it `frontend/landingPage`. make sure that you are in right branch looking at the bottom left you should see `frontend/landingPage` not `main`, `development`
+- [x] Add new `View` with basics html requirements under the `user` folder with name `landing.php`
+- [x] Add new `Controller` named `Users` using command found on templates(requires php and composer) readme or coding your own
 ```php
 // Template Controller
 <?php
@@ -41,24 +41,24 @@ class NameOfControllerHere extends BaseController
     }
 }
 ```
-- [ ] Sample Coding in Controller
-    - [ ] Change the `NameOfControllerHere` with the name of controller
-    - [ ] Add `return view('user/landing');` inside `index()` to show the page
-        - [ ] You can add more functions for different display or `routes`/`end point`
+- [x] Sample Coding in Controller
+    - [x] Change the `NameOfControllerHere` with the name of controller
+    - [x] Add `return view('user/landing');` inside `index()` to show the page
+        - [x] You can add more functions for different display or `routes`/`end point`
 		```php
 		// End point
 		// Format: $routes-><request type>('end point name`, 'Controller Name::Controller Function')
 		$routes->get('/', 'Users::index');
 		```
-- [ ] Update `Routes.php` under `Config`
-    - [ ] Update `Home::index` to `Users::index` reflecting the `User` Controller and `index` as one of its function
-- [ ] Now visit your site for manual checking.
+- [x] Update `Routes.php` under `Config`
+    - [x] Update `Home::index` to `Users::index` reflecting the `User` Controller and `index` as one of its function
+- [x] Now visit your site for manual checking.
     - Open Docker Desktop
     - Check Port from `nginx` it should by default `8090` but can use other poerts
     - This is the default port [live](http://localhost:8090/).
     - This wont pose issue if you didnt change the port or the port is not in use
-- [ ] Once all working you can start adding your `label` in your source control.
-    - [ ] Since we created landing page view, controller and updated the routes. We could say we added a new feature
+- [x] Once all working you can start adding your `label` in your source control.
+    - [x] Since we created landing page view, controller and updated the routes. We could say we added a new feature
 ```bash
 feat(landing page): Added a new landing page
 
@@ -76,10 +76,10 @@ feat(landing page): Added a new landing page
 ---
 
 [ ] 3. Create your Login Page
-- [ ] Create `Issue` named Login Page, can add description if you want to.
-- [ ] Create `Branch` name it `frontend/loginPage`. make sure that you are in right branch looking at the bottom left you should see `frontend/loginPage` not `main`, `frontend/landingPage`, `development`
-- [ ] Add new `View` with basics html requirements under the `user` folder with name `loginPage.php`
-- [ ] Update new `Controller` named `Users` using command found on templates(requires php and composer) readme or coding your own
+- [x] Create `Issue` named Login Page, can add description if you want to.
+- [x] Create `Branch` name it `frontend/loginPage`. make sure that you are in right branch looking at the bottom left you should see `frontend/loginPage` not `main`, `frontend/landingPage`, `development`
+- [x] Add new `View` with basics html requirements under the `user` folder with name `loginPage.php`
+- [x] Update new `Controller` named `Users` using command found on templates(requires php and composer) readme or coding your own
 ```php
 // Template Controller
 <?php
@@ -101,25 +101,25 @@ class NameOfControllerHere extends BaseController
     }
 }
 ```
-- [ ] Sample Coding in Controller
-    - [ ] Add `return view('user/loginPage');` inside `loginPage()` to show the page
-        - [ ] You can add more functions for different display or `routes`/`end point`
+- [x] Sample Coding in Controller
+    - [x] Add `return view('user/loginPage');` inside `loginPage()` to show the page
+        - [x] You can add more functions for different display or `routes`/`end point`
 		```php
 		// End point
 		// Format: $routes-><request type>('end point name`, 'Controller Name::Controller Function')
 		$routes->get('/', 'Users::index');
 		$routes->get('/login', 'Users::loginPage');
 		```
-- [ ] Update `Routes.php` under `Config`
-	- [ ] Add new Route for using `get` login: `$routes->get('/login', '');`
-	- [ ] Add the controller to the route: `$routes->get('/login', 'Users::loginPage');` comming from controller `Users` use the function `loginPage`
-- [ ] Now visit your site for manual checking
+- [x] Update `Routes.php` under `Config`
+	- [x] Add new Route for using `get` login: `$routes->get('/login', '');`
+	- [x] Add the controller to the route: `$routes->get('/login', 'Users::loginPage');` comming from controller `Users` use the function `loginPage`
+- [x] Now visit your site for manual checking
     - Open Docker Desktop
     - Check Port from `nginx` it should by default `8090` but can use other poerts
     - This is the default port [live](http://localhost:8090/login).
     - This wont pose issue if you didnt change the port or the port is not in use
-- [ ] Once all working you can start adding your `label` in your source control.
-    - [ ] Since we created login page view, controller and updated the routes. We could say we added a new feature
+- [x] Once all working you can start adding your `label` in your source control.
+    - [x] Since we created login page view, controller and updated the routes. We could say we added a new feature
 ```bash
 feat(login page): Added a new login page
 

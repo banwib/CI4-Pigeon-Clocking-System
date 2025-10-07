@@ -15,4 +15,8 @@ $routes->get('/manageclubPage', 'Users::manageClub');
 $routes->get('/racepointsPage', 'Users::racePoints');
 $routes->get('/racesPage', 'Users::races');
 $routes->get('/logsPage', 'Users::logs');
+$routes->get('/', 'Users::signup');
+$routes->get('/signupPage', 'Users::signup');
+
+
 $routes->get('/', 'Users::index');
