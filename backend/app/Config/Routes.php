@@ -7,3 +7,6 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Users::signup');
 $routes->get('/signupPage', 'Users::signup');
+
+
+$routes->get('/', 'Users::index');
