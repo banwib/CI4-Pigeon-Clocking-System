@@ -144,7 +144,7 @@ docker compose exec php php spark make:entity Uzer
 
 - Create a controller (add --resource to scaffold resourceful methods if you like) (using CodeIgniter's spark tool):
 ```cmd
-docker compose exec php php spark make:controller Usars
+docker compose exec php php spark make:controller Users
 ```
 
 - Create a seeder (for test/dev data) (using CodeIgniter's spark tool):
