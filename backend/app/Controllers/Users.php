@@ -43,4 +43,9 @@ class Users extends BaseController
         // For now, just redirect to mood board after "signup"
         return redirect()->to('/moodboardPage');
     }
+     public function index(): string
+    {
+        return view('user/landing');
+    }
+    
 }
