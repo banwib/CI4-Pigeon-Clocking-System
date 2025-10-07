@@ -7,33 +7,60 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class Users extends BaseController
 {
-    public function loginPage(): string
-    {
-        return view ('user/loginPage');
-    }
-     public function index(): string
+    public function index(): string
     {
         return view('user/landing');
     }
+
+    public function moodBoard(): string
+    {
+        return view('user/moodboardPage');
+    }
     
-}
-<?php
-
-namespace App\Controllers;
-
-use App\Controllers\BaseController;
-use CodeIgniter\HTTP\ResponseInterface;
-
-class Users extends BaseController
-{ 
+    public function roadmap(): string
+    {
+        return view('user/roadmapPage');
+    }
+    
+    public function login(): string
+    {
+        return view('user/loginPage');
+    }
+    
     public function signup(): string
     {
         return view('user/signupPage');
     }
-    public function index(): string
+    
+    public function processLogin()
     {
-        return view('welcome_message');
+        // For now, just redirect to mood board after "login"
+        return redirect()->to('/moodboardPage');
+    }
+    
+    public function processSignup()
+    {
+        // For now, just redirect to mood board after "signup"
+        return redirect()->to('/moodboardPage');
+    }
+    
+    public function manageClub(): string
+    {
+        return view('user/manageclubPage');
+    }
+    
+    public function racePoints(): string
+    {
+        return view('user/racepointsPage');
+    }
+    
+    public function races(): string
+    {
+        return view('user/racesPage');
+    }
+    
+    public function logs(): string
+    {
+        return view('user/logsPage');
     }
 }
-
-
