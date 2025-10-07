@@ -8,13 +8,14 @@
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- * Title Section -->
-  <h3 align="center">AD - CI4 Template</h3>
+  <h3 align="center">AD - Pigeon Clocking System</h3>
+  <p align="center"><em>A lightweight CodeIgniter 4 starter for pigeon club managers — makes race encoding and club management easier.</em></p>
 </div>
 
 <!-- * Description Section -->
 <div align="center">
-This repository is a beginner-friendly CodeIgniter 4 template.  
-It helps teams quickly bootstrap backend + frontend projects, with simple sample modules that show how to extend the system.
+This repository contains the AD - Pigeon Clocking System: a CodeIgniter 4 application built to help pigeon club managers run races and manage members, birds, and results.
+It focuses on making the encoding and day-to-day club operations faster and less error-prone.
 </div>
 
 <br/>
@@ -55,24 +56,27 @@ It helps teams quickly bootstrap backend + frontend projects, with simple sample
 
 ## Overview
 
-This template provides a **minimal CodeIgniter 4 project layout** with conventions for file organization, commit practices, and simple modules.
+AD - Pigeon Clocking System is a practical backend for pigeon clubs. It provides a modular CodeIgniter 4 codebase, Dockerized development environment, and example modules that show how to add domain-specific features like race management and club administration.
 
-It is designed to be **easy to start with** and a **reference for adding new features**.
+Built for local and club use, the system assumes a MySQL-compatible database and ships with migrations and seeders to get test data in place quickly. Developers can extend controllers, services, and repositories to add new features or integrate a frontend.
 
-* **Purpose**: a clean starting point for CI4 apps.
-* **Audience**: developers who want a predictable structure and quick onboarding.
+Purpose: help club managers and developers bootstrap a reliable pigeon race management app.
+
+Audience: pigeon club organizers, small teams, and developers who want a predictable CI4 structure with Docker and MySQL.
 
 ### Key Components
+These are the core modules included in this repo (or intended to be implemented as part of the system):
 
-These are **sample modules** included (or suggested) for learning how to add features:
+| Component             | Purpose                                                           | Notes / implementation details                          |
+| --------------------- | ----------------------------------------------------------------- | ------------------------------------------------------ |
+| Auth                  | User authentication and role-based access for managers and staff.  | Uses CI4 sessions; can be extended for JWT or OAuth.   |
+| CRUD                  | Generic create/read/update/delete patterns used across entities.   | Demonstrates Controller → Service → Repository pattern. |
+| Scheduler             | Race scheduling and task reminders for race days and deadlines.    | Useful for organizing race timelines and notifications. |
+| Account Management    | Manage club user accounts, permissions, and contact details.       | Admin-facing UI and APIs expected.                     |
+| Club Management       | Manage clubs, members, lofts, and bird registrations.              | Central domain model for club operations.              |
+| Race Management       | Create races, record clockings/results, and generate reports.      | Core domain module — supports encoding and results.    |
 
-| Component                 | Purpose                                                             | Notes                                                   |
-| ------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------- |
-| **Auth (Sample)**         | Basic login/logout and role check (admin/user).                     | Uses CI4 sessions + MySQL `users` table.                |
-| **CRUD Module**           | Example entity (`Posts` or `Tasks`) with create/read/update/delete. | Demonstrates Controller → Service → Repository pattern. |
-| **Scheduler (Sample)**    | Simple to-do list with due dates.                                   | Shows how to extend with new tables and services.       |
-
- <!-- ! Start simple. Use these modules as **learning samples**; extend or replace them based on your project’s needs. -->
+<!-- Use these modules as practical, domain-focused starting points — replace or extend them as needed. -->
 
 ### Technology
 

@@ -1,16 +1,16 @@
 # View -> Controller -> Routes
 
-[ ] 1. Setup Environment
-- [ ] Create project from template
-- [ ] Clone to your local
-- [ ] Make sure `Docker`, `php`(optional) and `composer`(optional) is installed to you pc. Your goof even you only using `Docker` but if youre orrotated in red lines install all
-- [ ] (optional) If you have `php` and `composer` do this. After clone inside the `backend` folder use command
+[x] 1. Setup Environment
+- [x] Create project from template
+- [x] Clone to your local
+- [x] Make sure `Docker`, `php`(optional) and `composer`(optional) is installed to you pc. Your goof even you only using `Docker` but if youre orrotated in red lines install all
+- [x] (optional) If you have `php` and `composer` do this. After clone inside the `backend` folder use command
 ```bash
 composer install
 ```
-- [ ] Start with updating `readme`
-- [ ] Once all done you can start adding your `label` in your source control.
-    - [ ] Since we updated the `readme`. since `readme` is document then we will automatically use `docs`
+- [x] Start with updating `readme`
+- [x] Once all done you can start adding your `label` in your source control.
+    - [x] Since we updated the `readme`. since `readme` is document then we will automatically use `docs`
 ```bash
 docs(readme): Updated the `readme`
 ```
