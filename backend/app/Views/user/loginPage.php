@@ -1,5 +1,4 @@
-
-
+<?= $this->include('user/fragments/header') ?>
 <div style="min-height: 80vh; display: flex; align-items: center; justify-content: center; padding: 20px;">
 	<div style="background: #222a31; border: 1px solid #36414c; border-radius: 8px; padding: 40px; width: 100%; max-width: 400px;">
 		<h1 style="text-align: center; margin: 0 0 30px 0; color: #e9edf1; font-family: Georgia, 'Times New Roman', serif;">Login</h1>
@@ -23,4 +22,4 @@
 		</div>
 	</div>
 </div>
-
+<?= $this->include('user/fragments/footer') ?>
