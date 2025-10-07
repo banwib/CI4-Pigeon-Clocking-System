@@ -121,7 +121,6 @@
   <div class="hero">
     <h2>Track Your Champions Effortlessly</h2>
     <p>Accurate. Reliable. Built for every pigeon enthusiast.</p>
-    <button>Get Started</button>
   </div>
 
   <section>
@@ -141,9 +140,9 @@
       </div>
     </div>
   </section>
-
+      <?= $this->include('user/fragments/cta') ?>
   <footer>
-    &copy; 2025 Pigeon Clocking System | Designed with Sky Blues & Loft Greens
+    &copy; 2025 Pigeon Clocking System
   </footer>
 
 </body>
